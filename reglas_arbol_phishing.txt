@@ -1,0 +1,13 @@
+REGLAS DEL ÁRBOL DE DECISIÓN - DETECCIÓN DE PHISHING
+============================================================
+
+|--- oferta_irreal <= 2.45
+|   |--- remitente_sospechoso <= 5.25
+|   |   |--- class: 0
+|   |--- remitente_sospechoso >  5.25
+|   |   |--- class: 0
+|--- oferta_irreal >  2.45
+|   |--- errores_gramaticales <= 2.25
+|   |   |--- class: 1
+|   |--- errores_gramaticales >  2.25
+|   |   |--- class: 1
